@@ -40,7 +40,13 @@ export default function ProjectCard({
               transform: hovered ? "rotate(38deg)" : "rotate(0deg)",
             }}
           >
-            <img src="black.svg" alt="clickable link" className="w-4 md:w-6" />
+            <div className="relative w-4 md:w-6 h-auto">
+              <img
+                src="/black.svg"
+                alt="clickable link"
+                className="object-contain"
+              />
+            </div>
           </a>
         </div>
         <div className="w-full flex justify-between">

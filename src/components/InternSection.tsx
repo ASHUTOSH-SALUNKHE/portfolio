@@ -19,7 +19,10 @@ function InternSection() {
   };
 
   return (
-    <div className="bg-[rgb(237,255,146)] in-h-screen px-4 sm:px-6 md:px-2 pb-10 text-black" id="internships">
+    <div
+      className="bg-[rgb(237,255,146)] in-h-screen px-4 sm:px-6 md:px-2 pb-10 text-black"
+      id="internships"
+    >
       <div className=" flex justify-between  px-[60px] pt-[40px] pb-[10px]">
         <div
           onMouseEnter={() => setHovered(true)}
@@ -47,9 +50,11 @@ function InternSection() {
         >
           <a href="https://www.linkedin.com/in/ashutosh-salunkhe-1a8682373">
             <img
-              src="green.svg"
+              src="/green.svg"
               alt="an arrow"
-              className="h-15 sm:h-10 md:h-20"
+              className="h-[60px] sm:h-10 md:h-20 w-auto object-contain"
+              loading="lazy"
+              decoding="async"
             />
           </a>
         </div>

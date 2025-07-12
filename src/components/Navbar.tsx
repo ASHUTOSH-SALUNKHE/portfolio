@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-
+import Image from "next/image";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -86,11 +86,14 @@ export default function Navbar() {
                   href={item.href}
                   className={`${item.bg} px-4 py-2 lg:px-4 lg:py-2 rounded-md lg:rounded-[5px] inline-flex items-center gap-2 w-full lg:w-auto`}
                 >
-                  <img
-                    src={item.icon}
-                    className="hidden lg:block h-5 w-5"
-                    alt={item.text}
-                  />
+                  <div className="relative hidden lg:block h-5 w-5">
+                    <Image
+                      src={item.icon}
+                      alt={item.text}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                   <span
                     className={`${item.color} text-[16px] lg:text-[15px] font-medium h-8 lg:h-auto w-full lg:w-auto flex justify-center items-center lg:justify-center lg:items-center`}
                   >

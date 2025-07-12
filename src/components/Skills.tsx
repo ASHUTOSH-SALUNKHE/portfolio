@@ -19,10 +19,10 @@ const skillData = {
   Languages: ["English" , "Hindi" , "Marathi"]
 };
 
-const categories = Object.keys(skillData);
-
+const categories: SkillCategory[] = Object.keys(skillData) as SkillCategory[];
+type SkillCategory = keyof typeof skillData;
 const Skills = () => {
-  const [active, setActive] = useState("Frontend");
+  const [active, setActive] = useState<SkillCategory>("Frontend");
   const [hovered, setHovered] = useState(false);
 
   return (

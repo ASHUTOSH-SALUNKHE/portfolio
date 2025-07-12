@@ -5,11 +5,14 @@ import LinksSection from "./LinksSection";
 
 function HeaderSection() {
   return (
-    <div className="h-screen flex flex-col overflow-x-hidden md:overflow-y-hidden overflow-y-auto" id="header">
+    <div
+      className="h-screen flex flex-col overflow-x-hidden md:overflow-y-hidden overflow-y-auto"
+      id="header"
+    >
       <div className="header-bg flex-grow flex flex-col md:flex-row justify-center items-center px-6 md:px-15 py-8 md:py-[80px] md:gap-20 md:mt-[50px] mt-[80px]">
         <div className="flex flex-col justify-center items-start text-center md:text-left ">
           <h1 className="header-title">Hello!</h1>
-          <h1 className="header-title">I'm Ashutosh Salunkhe</h1>
+          <h1 className="header-title">I&#39;m Ashutosh Salunkhe</h1>
           <div className="header-description leading-relaxed md:text-left">
             <span className="text-primary">A </span>
             <span className="text-orange-400">design</span>
